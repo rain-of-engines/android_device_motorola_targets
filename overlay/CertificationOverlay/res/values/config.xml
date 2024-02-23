@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Build properties from a GMS certified device -->
+    <string-array name="config_certifiedBuildProperties">
+        <item>PRODUCT:msm8994</item>
+        <item>DEVICE:msm8994</item>
+        <item>MANUFACTURER:Huawei</item>
+        <item>BRAND:Android</item>
+        <item>MODEL:angler</item>
+        <item>FINGERPRINT:Android/msm8994/msm8994:5.1/LMY47I/jslave10310310:eng/test-keys</item>
+        <item>FIRST_API_LEVEL:22</item>
+    </string-array>
+</resources>
