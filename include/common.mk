@@ -36,6 +36,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+TARGET_BOOTANIMATION_RES := 1080
+
 # ROM Name
 ROM_NAME := $(firstword $(subst _, ,$(TARGET_PRODUCT)))
 

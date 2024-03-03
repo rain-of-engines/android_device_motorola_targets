@@ -18,6 +18,5 @@ $(call inherit-product, vendor/derp/config/common_full_phone.mk)
 PRODUCT_NAME := derp_$(DEVICE)
 
 WITH_GMS := true
-TARGET_BOOTANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false

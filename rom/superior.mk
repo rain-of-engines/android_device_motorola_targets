@@ -17,7 +17,6 @@ $(call inherit-product, vendor/superior/config/common.mk)
 
 PRODUCT_NAME := superior_$(DEVICE)
 
-TARGET_BOOTANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
 USE_MOTO_CALCULATOR := true
 BUILD_WITH_GAPPS := true
