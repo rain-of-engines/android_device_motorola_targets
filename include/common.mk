@@ -22,15 +22,6 @@ PRODUCT_DEVICE := $(DEVICE)
 # Manufacturer
 PRODUCT_MANUFACTURER := Motorola
 
-# Overlays
-PRODUCT_PACKAGES += \
-    CertificationOverlay
-
-ifneq (,$(filter %derp, $(PRODUCT_NAME)))
-PRODUCT_PACKAGES += \
-    DerpMaintainer
-endif
-
 # Required Inheritance
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -43,3 +34,6 @@ ROM_NAME := $(firstword $(subst _, ,$(TARGET_PRODUCT)))
 
 # Inherit device makefile
 include device/motorola/$(DEVICE)/device.mk
+
+# Utils
+include device/motorola/targets/include/utils.mk
